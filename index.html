@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Unofficial Qwant web search</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body style="background-color: black;">
+  <div>
+    <form submit="buttonSubmit" action="#">
+      <div class="form-group row p-2 mb-0">
+        <div class="col-sm-9 pr-1">
+          <input type="text" class="form-control" name="q" id="value" placeholder="Qwant Search" autofocus />
+        </div>
+        <div class="col-sm-3 pl-1">
+          <button type="submit" class="form-control btn-primary" for="value" id="buttonSubmit">Search</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>
